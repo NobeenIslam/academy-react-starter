@@ -9,11 +9,11 @@ function FavouritePlace(props: FavouritePlaceProps): JSX.Element {
   return (
     <div>
       <img src={props.imagePath} alt="" />
-      <p>{props.caption}</p>
-      <p>
+      <h1>{props.caption}</h1>
+      <h2>
         {props.location.city}, {props.location.country} (
         <a href={props.location.mapLink}>map link</a>)
-      </p>
+      </h2>
       <p>{props.description}</p>
     </div>
   );
