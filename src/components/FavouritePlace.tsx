@@ -12,8 +12,9 @@ function FavouritePlace(props: FavouritePlaceProps): JSX.Element {
       <p>{props.caption}</p>
       <p>
         {props.location.city}, {props.location.country} (
-        <a href={props.location.mapLink}>map link</a>
+        <a href={props.location.mapLink}>map link</a>)
       </p>
+      <p>{props.description}</p>
     </div>
   );
 }
