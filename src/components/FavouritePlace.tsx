@@ -7,7 +7,7 @@ interface FavouritePlaceProps {
 
 function FavouritePlace(props: FavouritePlaceProps): JSX.Element {
   return (
-    <div>
+    <section className="FavouritePlace">
       <img src={props.imagePath} alt="" />
       <h1>{props.caption}</h1>
       <h2>
@@ -15,7 +15,7 @@ function FavouritePlace(props: FavouritePlaceProps): JSX.Element {
         <a href={props.location.mapLink}>map link</a>)
       </h2>
       <p>{props.description}</p>
-    </div>
+    </section>
   );
 }
 
