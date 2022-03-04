@@ -1,10 +1,5 @@
-
-function Header(): JSX.Element{
-    return(
-        <header>
-            Nobeen's Favourite Places
-        </header>
-    )
+function Header(): JSX.Element {
+  return <header>Nobeen's Favourite Places</header>;
 }
 
-export default Header
+export default Header;
