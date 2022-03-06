@@ -7,7 +7,7 @@ function NavItem(props: NavItemProps): JSX.Element {
   return (
     <>
       <span> | </span>
-      <a href={props.scholarLink}>{props.label}</a>
+      <a href={props.scholarLink}><u>{props.label}</u></a>
     </>
   );
 }

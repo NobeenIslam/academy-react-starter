@@ -1,9 +1,4 @@
-interface FavouritePlaceProps {
-  imagePath: string;
-  caption: string;
-  location: { city: string; country: string; mapLink: string };
-  description: string;
-}
+import FavouritePlaceProps from "./interface";
 
 function FavouritePlace(props: FavouritePlaceProps): JSX.Element {
   return (
@@ -11,8 +6,7 @@ function FavouritePlace(props: FavouritePlaceProps): JSX.Element {
       <img src={props.imagePath} alt="" />
       <h1>{props.caption}</h1>
       <h2>
-        {props.location.city}, {props.location.country} (
-        <a href={props.location.mapLink}>map link</a>)
+        {props.city}, {props.country} (<a href={props.mapLink}>map link</a>)
       </h2>
       <p>{props.description}</p>
     </section>
