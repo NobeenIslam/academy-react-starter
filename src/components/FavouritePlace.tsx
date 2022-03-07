@@ -2,7 +2,7 @@ import FavouritePlaceProps from "./interface";
 
 function FavouritePlace(props: FavouritePlaceProps): JSX.Element {
   return (
-    <section className="FavouritePlace">
+    <section className="FavouritePlace" id={props.id}>
       <img src={props.imagePath} alt="" />
       <h1>{props.caption}</h1>
       <h2>

@@ -1,4 +1,5 @@
 interface FavouritePlaceProps {
+  id: string;
   imagePath: string;
   caption: string;
   city: string;
