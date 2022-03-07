@@ -3,7 +3,11 @@ import NavItem from "./NavItem";
 function Footer(): JSX.Element {
   return (
     <footer>
-      <p><a href = "#top"><u>Return to top</u></a></p>
+      <p>
+        <a href="#top">
+          <u>Return to top</u>
+        </a>
+      </p>
       <p>Want to see some more cool places? Click the scholar links below</p>
       <NavItem
         label={"Abdul"}
